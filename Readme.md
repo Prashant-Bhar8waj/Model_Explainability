@@ -1,7 +1,6 @@
 # TOC
 
 - [TOC](#toc)
-- [Assignment](#assignment)
 - [Model Explanationability](#model-explanationability)
   - [Integrated Gradients](#integrated-gradients)
   - [Integrated Gradients with Noise](#integrated-gradients-with-noise)
@@ -12,7 +11,6 @@
   - [GradCAM ++](#gradcam-)
 - [Adversial Attacks wiht PGD](#adversial-attacks-wiht-pgd)
 - [Model Robustness](#model-robustness)
-# Assignment
 
 1. Use Pretrained Models from TIMM (take models with larger input)
 2. Do ALL the following for any 10 images taken by you (must be a class from ImageNet)
@@ -32,13 +30,11 @@
       2. FGSM
       3. Random Noise
       4. Random Brightness 
-    HINT: you can use https://albumentations.ai/ .for more image perturbations
 3. Integrate above things into your pytorch lightning template
    1. create explain.py that will do all the model explanations
    2. create robustness.py to check for model robustness
 4. Create a EXPLAINABILITY.md in log book folder of your repository
    1. Add the results (plots) of all the above things you’ve done
-5. Submit link to EXPLAINABILITY.md in your github repository
 
 
 `python src/explain.py source=images/test_images/ explainability=occlusion`
